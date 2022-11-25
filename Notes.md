@@ -34,3 +34,20 @@ Cafe au Lait
     The cafe au lait is typically made with French press coffee instead of an espresso shot to bring out the different flavors in the coffee. It is then paired with scalded milk instead of steamed milk and poured at a 50/50 ratio.
 Iced Coffee
     Iced coffees become very popular in the summertime in the United States. The recipes do have some variance, with some locations choosing to interchange milk with water in the recipe. Often, different flavoring syrups will be added per the preference of the customer.
+
+
+home page tags
+    <h1>Caffined</h1>
+    <p>Easy to follow instructions for great coffee</p>
+scss
+    h1{
+    font-family: 'Yellow';
+    font-size: 60px;
+    color: #443229;
+    }
+  
+    p{
+        font-family: 'Yellow';
+        font-size: 20px;
+        color: #684028;
+    }

@@ -1,12 +1,16 @@
 import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 import './App.scss'
+import Layout from './components/Layout/index'
 
 function App() {
 
   return (
     <>
-      <h1>Caffined</h1>
-      <p>Easy to follow instructions for great coffee</p>
+    <Routes>
+      <Route path='/' element={<Layout />} />
+
+    </Routes>
     </>
   )
 }
