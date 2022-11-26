@@ -1,0 +1,45 @@
+@import "../Breakpoints/breakpoints.scss";
+
+div{
+
+    .hamburger-div{
+
+        .hamburger{
+            display: none;
+            
+            @include media('<=tablet'){
+                display: block;
+                position: absolute;
+                top: 25px;
+                left: 25px;
+                z-index: 4;   
+            }
+        }
+
+        .nav-bar-mobile{
+            display: none;
+    
+            @include media('<=tablet'){
+                display: block;
+                top: 60px;
+            }
+        }
+
+    }
+
+
+    .nav-bar-desktop{
+
+        @include media('<=tablet'){
+            display: none;
+        }
+        
+    }
+
+
+
+}
+
+
+
+

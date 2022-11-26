@@ -6,7 +6,7 @@ import { faCoffee, faPhone, faHandshake, faHome } from '@fortawesome/free-solid-
 
 const DesktopNavigation = () => {
     return(
-        <div className='nav-bar'>
+        <div className='nav-bar-desktop'>
             <Link className='logo' to='/'>
                 <img src={Logo} alt='logo'/>
                 <p alt='logo-text'>Caffiend</p>
