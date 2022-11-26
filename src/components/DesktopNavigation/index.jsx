@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import './index.scss'
 import Logo from '../../assets/Images/logo-brown-trans.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faPhone, faHandshake } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faPhone, faHandshake, faHome } from '@fortawesome/free-solid-svg-icons'
 
 const DesktopNavigation = () => {
     return(
@@ -13,6 +13,16 @@ const DesktopNavigation = () => {
             </Link>
             <nav>
                 <NavLink exact="true" activeclassname="active" to="/">
+                    <div>
+                    <section>
+                    <hr />
+                    <FontAwesomeIcon icon={faHome} color="#684028" />
+                    <p>Home</p> 
+                    <hr />
+                    </section>
+                    </div>
+                </NavLink>
+                <NavLink exact="true" activeclassname="active" className="coffee-link" to="/coffee">
                     <div>
                     <section>
                     <hr />

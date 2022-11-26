@@ -51,3 +51,6 @@ scss
         font-size: 20px;
         color: #684028;
     }
+
+TO DO: 
+    look into if you going to use the mobile nav for hamger coffee list

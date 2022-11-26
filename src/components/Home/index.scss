@@ -1,0 +1,44 @@
+@import "../Breakpoints/breakpoints.scss";
+
+.text-zone{
+    width: 90%;
+    will-change: contents;
+    height: 90%;
+    min-width: 556px;
+    position: absolute;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: bounceIn 1s forwards;
+    animation-delay: 1s;
+
+    @include media('<=tablet'){
+        min-width: 200px;
+        width: 20%;
+        right: 50px;
+    }
+
+
+    h1{
+        font-family: 'Yellow';
+        font-size: 60px;
+        color: #443229;
+    }
+      
+    p{
+        font-family: 'Sugar';
+        font-size: 20px;
+        color: #684028;
+    }
+
+    .model-wrapper{
+        height: 40%;
+        width: 100%;
+        padding: 0;
+    }
+
+}
+    
+    
