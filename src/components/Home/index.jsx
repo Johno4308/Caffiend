@@ -2,6 +2,7 @@ import { Suspense, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, useGLTF } from '@react-three/drei'
 import './index.scss'
+import { Link } from 'react-router-dom'
 
 function CoffeeModel(props) {
     const group = useRef()
@@ -32,7 +33,7 @@ const Home = () => {
             <h1>Caffined</h1>
             <p>Easy to follow instructions for great coffee</p>
             <div className='model-wrapper'>
-                <Canvas camera={{ fov:70, position: [0,3,5]}}>
+                <Canvas camera={{ fov:30, position: [0,15,5]}}>
                     <Suspense fallback={null}>
                     <ambientLight />
                     <directionalLight intensity={2} positon={[0,0,50]} />
@@ -41,6 +42,11 @@ const Home = () => {
                 </Suspense>
                 </Canvas>
             </div>
+            <Link 
+              to="/coffee" 
+              className='flat-button'>
+              Coffees
+            </Link>
         </div>
     )
 }
