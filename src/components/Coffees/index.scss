@@ -1,45 +1,92 @@
+@import "../Breakpoints/breakpoints.scss";
+
 .coffees-text-zone{
     width: 95%;
     position: absolute;
     left: 25px;
 
     h1{
-        position: relative;
+        font-size: 60px;
         font-family: 'Yellow';
-        font-size: 40px;
-        right: 22px;
         color: #443229;
+
+        @include media('<=tablet'){
+            position: relative;
+            font-size: 40px;
+            right: 22px;
+        }
     }
 
     p{
+        position: relative;
         font-family: 'Sugar';
         width: 90%;
+        left: 80px;
+
+        @include media('<=tablet'){
+            left: 0px;
+        }
+
     }
 
     section{
         padding: 0;
         margin: 0;
+        display: inline-block;
+        text-align: center;
+        width: 60%;
+
+
         img{
-            position: relative;
-            left: -80px;
+            //position: relative;
+            // left: -150px;
+            width: 300px;
+            float: left;
+
+            @include media('<=tablet'){
+                position: relative;
+                width: 150px;
+                left: -60px;
+
+            }
         }
 
         p{
-            position: relative;
-            line-height: 13px;
-            top: -150px;
-            left: 180px;
-            width: 100px;
+            font-size: 30px;
+            line-height: 20px;
+            float: right;
+            width: 50%;
+            padding-top: 5%;
+            left: 0;
+        
+            @include media('<=tablet'){
+                position: relative;
+                font-size: 16px;
+                line-height: 13px;
+                float: unset;
+                top: -120px;
+                left: 110px;
+                width: 100px;
+            }
         }
     }
 
     ul{
-        position: relative;
-        top: -100px;
-        left: -20px;
+        text-align: center;
+
+        @include media('<=tablet'){
+            position: relative;
+            top: -100px;
+            left: -20px;
+        }
+
+
         li{
-            text-align: left;
-            font-size: 15px;
+
+            @include media('<=tablet'){
+                text-align: left;
+                font-size: 15px;
+            }
         }
     }
 
