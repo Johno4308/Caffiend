@@ -3,14 +3,18 @@ import Espresso from '../../assets/Images/espresso.png'
 
 const Coffees = () => {
     return(
-        <div>
+        <div className='coffees-text-zone'>
             <h1>Espresso</h1>
-            <img src={Espresso} width="200px"/>
+            
             <p> The espresso, also known as a short black, 
                 is approximately 1 oz. of highly concentrated coffee. 
                 Although simple in appearance, it can be difficult to master.
                 </p>
-            
+                <section>
+                <img src={Espresso} width="150px"/>
+                <p>Ratio: 1 shot of espresso</p>
+                <p>Cup: 60-120 ml. Espresso Cup</p>
+                </section>
             <ul>
                 <li>Clean your portafilter.</li>
                 <li>Dose correctly.</li>
