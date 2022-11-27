@@ -4,6 +4,7 @@ import './App.scss'
 import Home from './components/Home'
 import Layout from './components/Layout/index'
 import Coffees from './components/Coffees'
+import CoffeeNavDesk from './components/CoffeeDesktopNavigation/index'
 
 import Data from '../src/Data/coffeesData'
 
@@ -23,12 +24,16 @@ function App() {
     )
   })
 
+
+
+
   return (
     <>
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />}/>
         {Coffee}
+
       </Route>
     </Routes>
     </>

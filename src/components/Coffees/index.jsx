@@ -4,6 +4,8 @@ import './index.scss'
 
 
 const Coffees = (props) => {
+
+    //console.log(props.data.title)
     return(
         <div className='coffees-text-zone'>
             

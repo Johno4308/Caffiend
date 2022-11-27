@@ -56,7 +56,7 @@ div{
 
     }
 
-    .coffee-nav-desktop{
+    .coffeeDesktopNav{
 
         @include media('<=tablet'){
             display: none;

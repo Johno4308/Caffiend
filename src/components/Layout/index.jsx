@@ -50,9 +50,17 @@ const Layout = () => {
         />
 
     const CoffeeList = Data.map( data1 => {
-        console.log(data1.id)
         return(
             <CoffeeMobileNavigation 
+                key={data1.id}
+                data={data1}
+            />
+        )
+    })
+
+    const CoffeeDesktopList = Data.map( data1 => {
+        return(
+            <CoffeeDesktopNavigation 
                 key={data1.id}
                 data={data1}
             />
@@ -67,7 +75,8 @@ const Layout = () => {
             {openList ? closeIcon1 : coffeHambugerIcon} 
         </div>
         {openList && CoffeeList}
-        <CoffeeDesktopNavigation />
+
+        {CoffeeDesktopList}
 
         <div className='hamburger-div'>
         {open ? closeIcon : hambugerIcon}

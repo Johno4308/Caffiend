@@ -7,9 +7,9 @@ const CoffeeMobileNavigation = (props) => {
 
     return(
         <section className='coffeeNav'>  
-        <li> 
-        {props.data.title}
-        </li>
+          <li key={props.data.id}> 
+          {props.data.title}
+          </li>
         </section>
     )
 }

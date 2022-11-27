@@ -1,7 +1,7 @@
 export default[
     {
         id: 1,
-        path: '/coffee',
+        show: false,
         title: 'Espresso',
         description: 'The espresso, also known as a short black, is approximately 30 ml. of highly concentrated coffee. Although simple in appearance, it can be difficult to master.',
         img: 'espresso.png',
@@ -44,7 +44,7 @@ export default[
     },
     {
         id: 2,
-        path: '/coffee',
+        show: false,
         title: 'Double Espresso',
         description: '    A double espresso may also be listed as doppio, which is the Italian word for double. This drink is highly concentrated and strong.',
         img: 'doubleespresso.png',
