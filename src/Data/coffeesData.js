@@ -6,15 +6,39 @@ export default[
         img: 'espresso.png',
         ratio: 'Ratio: 1 shot of espresso',
         cup: 'Cup: 60-120 ml. Espresso Cup',
-        steps: [{
-            1: 'Clean your portafilter.',
-            2: 'Dose correctly.',
-            3: 'Distribute your grounds in the portafilter.',
-            4: 'Tamp evenly and consistently.',
-            5: 'Rinse your group head.',
-            6: 'Insert the portafilter and start brewing immediately.',
-            7: 'Be aware of the yield & brew time.',
-            8: 'Serve with a smile.'
-        }]
+        steps: [
+            {
+                idx : 1,
+                text: 'Clean your portafilter.',
+            },
+            {
+                idx : 2,
+                text: 'Dose correctly.',
+            },
+            {
+                idx : 3,
+                text: 'Distribute your grounds in the portafilter.',
+            },
+            {
+                idx : 4,
+                text: 'Tamp evenly and consistently.',
+            },
+            {
+                idx : 5,
+                text: 'Rinse your group head.',
+            },
+            {
+                idx : 6,
+                text: 'Insert the portafilter and start brewing immediately.',
+            },
+            {
+                idx : 7,
+                text: 'Be aware of the yield & brew time.',
+            },
+            {
+                idx : 8,
+                text: 'Serve with a smile.',
+            }
+        ]
     }
 ]
