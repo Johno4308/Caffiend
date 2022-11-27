@@ -47,7 +47,7 @@ const MobileNavigation = () => {
                     <section className='sec3'>
                     <hr />
                     <FontAwesomeIcon icon={faPhone} color="#684028" />
-                    <p>Contact Us</p> {/*fa-phone*/}
+                    <p>Contact Us</p> 
                     <hr />
                     </section>
                     </div>
@@ -57,7 +57,7 @@ const MobileNavigation = () => {
                     <section className='sec4'> 
                     <hr />
                     <FontAwesomeIcon icon={faHandshake} color="#684028" />
-                    <p>Acknowledge</p> {/*fa-handshake-o*/}
+                    <p>Acknowledge</p> 
                     <hr />
                     </section>
                     </div>

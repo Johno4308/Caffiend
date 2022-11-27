@@ -7,6 +7,7 @@ import { Outlet } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import Data from '../../Data/coffeesData'
 
 
 const Layout = () => {
@@ -47,15 +48,25 @@ const Layout = () => {
             className="coffeehamburger"
             onClick={() => setOpenList(!openList)} 
         />
+
+    const CoffeeList = Data.map( data1 => {
+        console.log(data1.id)
+        return(
+            <CoffeeMobileNavigation 
+                key={data1.id}
+                data={data1}
+            />
+        )
+    })
+
     return(
     <div>
         <div className='coffee-ham-div'>
             <p>other </p>
             {coffeesIcon}
             {openList ? closeIcon1 : coffeHambugerIcon} 
-            {openList && <CoffeeMobileNavigation />}
         </div>
-
+        {openList && CoffeeList}
         <CoffeeDesktopNavigation />
 
         <div className='hamburger-div'>
