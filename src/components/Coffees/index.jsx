@@ -6,6 +6,7 @@ import './index.scss'
 const Coffees = (props) => {
     return(
         <div className='coffees-text-zone'>
+            
             <h1>{props.data.title}</h1>
             <p> {props.data.description}</p>
             <section>

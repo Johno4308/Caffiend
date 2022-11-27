@@ -13,6 +13,7 @@ function App() {
     return(
       <Route 
         path='/coffee' 
+        key={data}
         element={
         <Coffees 
           key={data.id}
@@ -27,7 +28,6 @@ function App() {
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />}/>
-        {/* <Route path='/coffee' element={<Coffees />}/> */}
         {Coffee}
       </Route>
     </Routes>

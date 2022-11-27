@@ -8,35 +8,35 @@ export default[
         cup: 'Cup: 60-120 ml. Espresso Cup',
         steps: [
             {
-                idx : 1,
+                idx : 101,
                 text: 'Clean your portafilter.',
             },
             {
-                idx : 2,
+                idx : 102,
                 text: 'Dose correctly.',
             },
             {
-                idx : 3,
+                idx : 103,
                 text: 'Distribute your grounds in the portafilter.',
             },
             {
-                idx : 4,
+                idx : 104,
                 text: 'Tamp evenly and consistently.',
             },
             {
-                idx : 5,
+                idx : 105,
                 text: 'Rinse your group head.',
             },
             {
-                idx : 6,
+                idx : 106,
                 text: 'Insert the portafilter and start brewing immediately.',
             },
             {
-                idx : 7,
+                idx : 107,
                 text: 'Be aware of the yield & brew time.',
             },
             {
-                idx : 8,
+                idx : 108,
                 text: 'Serve with a smile.',
             }
         ]
