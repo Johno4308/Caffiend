@@ -2,31 +2,56 @@ import { NavLink } from 'react-router-dom'
 import Coffees from '../Coffees'
 import CoffeeList from '../../Data/coffeesData'
 import './index.scss'
-
+import Data from '../../Data/coffeesData'
+import { Route, Routes } from 'react-router-dom'
 
 const CoffeeDesktopNavigation = (props) => {
     function handleClick(){
       console.log(props.data.id)
     }
 
-    //maybe work here.. coffee here has a classname and takes over the zindex if bool is clicked
 
-    // const styles = {
-    //   zIndex: props.show ? 3 : 1
-    // }
-    
+    const Coffee1 = () => {
+      return(
+        <Route 
+        path='/coffee' 
+        key={Data}
+        element={
+        <Coffees 
+          key={Data[1].id}
+          data={Data[1]}
+        />}
+        />
+      )
+    }
+
+    const Coffee = Data.map( data => {
+      return(
+        <Route 
+          path='/coffee' 
+          key={data}
+          element={
+          <Coffees 
+            key={data.id}
+            data={data}
+          />}
+          />
+      )
+    })
+
+    console.log(Coffee1)
+
     const CoffeeItem = CoffeeList.map( data => {
       return(
-      <NavLink exact="true" activeclassname="active"  to="/coffee">
-          <Coffees 
-          key={data.id}
-          data={data}/>
-      </NavLink>
+        <>
+        <Routes>
+          {Coffee1}
+        </Routes>
+      </>
     )})
 
-
     return(
-      <NavLink  exact="true" activeclassname="active" className="coffee-nav" to="/coffee">
+      <NavLink onClick={handleClick} exact="true" activeclassname="active" className="coffee-nav" to="/coffee">
         <section className='coffeeDesktopNav'>  
           <li key={props.data.id} onClick={props.toggle}> 
           {props.data.title}
