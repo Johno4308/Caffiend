@@ -3,13 +3,13 @@ import './index.scss'
 
 
 const CoffeeDesktopNavigation = (props) => {
-    function handleClick(){
-      console.log(props.data.id)
-    }
+    // function handleClick(){
+    //   console.log(props.data.id)
+    // }
 
 
     return(
-      <NavLink onClick={handleClick} exact="true" activeclassname="active" className="coffee-nav" to="/coffee">
+      <NavLink onClick={props.toggle} exact="true" activeclassname="active" className="coffee-nav" to="/coffee">
         <section className='coffeeDesktopNav'>  
           <li key={props.data.id} onClick={props.toggle}> 
           {props.data.title}

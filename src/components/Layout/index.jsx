@@ -58,14 +58,15 @@ const Layout = () => {
         )
     })
 
-    const CoffeeDesktopList = Data.map( data1 => {
-        return(
-            <CoffeeDesktopNavigation 
-                key={data1.id}
-                data={data1}
-            />
-        )
-    })
+    //trying to move this to ap.jsx instead to filter all child components through one Data link
+    // const CoffeeDesktopList = Data.map( data1 => {
+    //     return(
+    //         <CoffeeDesktopNavigation 
+    //             key={data1.id}
+    //             data={data1}
+    //         />
+    //     )
+    // })
 
     return(
     <div>
@@ -76,7 +77,7 @@ const Layout = () => {
         </div>
         {openList && CoffeeList}
 
-        {CoffeeDesktopList}
+        {/* {CoffeeDesktopList} */}
 
         <div className='hamburger-div'>
         {open ? closeIcon : hambugerIcon}
