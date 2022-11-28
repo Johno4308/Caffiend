@@ -9,8 +9,9 @@ import CoffeeNavDesk from './components/CoffeeDesktopNavigation/index'
 import Data from '../src/Data/coffeesData'
 
 function App() {
+  const [coffeeList, setCoffeeList] = useState(Data)
 
-  const Coffee = Data.map( data => {
+  const Coffee = coffeeList.map( data => {
     return(
       <Route 
         path='/coffee' 
