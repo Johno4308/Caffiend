@@ -13,13 +13,16 @@
         display: block;
         padding: 0px 0;
         text-decoration: none;
-
+        
+        
         img{
             display: block;
             margin: 8px auto;
             width: 60px;
             height: auto;
             margin-bottom: 0;
+            position: absolute;
+            
         }
 
         p{
@@ -27,6 +30,8 @@
             font-size: 12px;
             margin-top: 0;
             color: #443229;
+            display: block;
+            position: absolute;
         }
     }
 
