@@ -1,25 +1,20 @@
 @import "../Breakpoints/breakpoints.scss";
 
 
-// .coffeeDesktopNav{
-//     color: #FFFFFF;
-// }
-
-// div{
-//   #coffee-ham-div{
-//     visibility: hidden;
-// }
-// }
-
-
-
 .contact-textzone{
-    display: block;
-    width: 100%;
-    margin: auto;
-    margin-left: 0;
-    margin-right: 0;
-
+  width: 90%;
+  will-change: contents;
+  height: 90%;
+  min-width: 556px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: bounceIn 1s forwards;
+  animation-delay: 1s;
+  
 
 
     @include media('<=tablet'){
@@ -33,6 +28,7 @@
 
         @include media('<=tablet'){
             font-size: 42px;
+            width: 50%;
         }
     }
 
@@ -45,6 +41,7 @@
         @include media('<=tablet'){
             font-size: 22px;
             padding-top: 2px;
+            width: 50%;
         }
     }
 
@@ -58,104 +55,21 @@
             right: 10px;
         }
     }
-}
 
-.contact-form {
-    width: 60%;
-    margin: 0;
-    padding: 0;
-
-    ul {
-      padding: 0;
-      margin: 0;
-  
-      li {
+    .model-wrapper{
+        height: 40%;
+        width: 100%;
         padding: 0;
-        margin: 0;
-        list-style: none;
-        margin-bottom: 10px;
-        opacity: 0;
-        overflow: hidden;
-        display: block;
-        clear: both;
         position: relative;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
 
-        @include media("<=tablet"){
-          width: 300px;
-      }
 
-      }
-  
-      li.half {
-        width: 49%;
-        margin-left: 2%;
-        float: left;
-        clear: none;
-        @include media("<=tablet"){
-          width: 300px;
-      }
-  
-        &:first-child {
-          margin-left: 0;
-        }
-      }
-    }
-  
-    input[type='text'],
-    input[type='email'] {
-      width: 100%;
-      border: 2px solid #115173;
-      background: #000000;
-      height: 50px;
-      font-size: 16px;
-      color: #FFFFFF;
-      padding: 0 20px;
-      box-sizing: border-box;
-
-      @include media("<=tablet"){
-        height: 40px;
-    }
-
-    }
-  
-    textarea {
-      width: 100%;
-      position: relative;
-      border: 2px solid #115173;
-      background: #000000;
-      height: 50px;
-      font-size: 16px;
-      color: #FFFFFF;
-      padding: 20px;
-      box-sizing: border-box;
-      min-height: 150px;
-
-    }
-  
-    .flat-button {
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 4px;
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 10px 18px;
-        border: 2px solid #54047C;
-        background-color: transparent;
-        color:#b675d7;
-        margin-top: 0px;
-        width: 140px;
-        height: 40px;
-        float: left;
-        white-space: nowrap;
-
-        &:hover{
-            // background: linear-gradient(30deg, #54047C, #B20776);
-            color: #43bdea;
-            border: 2px solid #1b2b8d;
-            opacity: 0.6;
+        @include media{
+            height: 30%;
+            position: relative;
+            top: -10px;
+            right: 130px;
+            margin-bottom: 20px;
         }
     }
-
 }
+

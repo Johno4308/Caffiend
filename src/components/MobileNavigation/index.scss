@@ -13,7 +13,8 @@
         display: block;
         padding: 0px 0;
         text-decoration: none;
-        
+        width: 100%;
+        top: 5px;
         
         img{
             display: block;
@@ -21,7 +22,6 @@
             width: 60px;
             height: auto;
             margin-bottom: 0;
-            position: absolute;
             
         }
 
@@ -31,7 +31,6 @@
             margin-top: 0;
             color: #443229;
             display: block;
-            position: absolute;
         }
     }
 
