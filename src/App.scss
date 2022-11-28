@@ -1,4 +1,5 @@
 $primary-color: #443229;
+@import "./components/Breakpoints/breakpoints.scss";
 @import 'animate.css';
 
 #root {
@@ -18,6 +19,70 @@ $primary-color: #443229;
   src: url('../src/assets/Fonts/Coffee-with-Sugar.ttf') format('truetype');
 }
 
+
+div{
+  .coffee-ham-div{
+        
+    background: transparent;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    display: flex;
+
+    .coffeehamburger{
+        display: none;
+
+        @include media('<=tablet'){
+            display: block;
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            z-index: 4;   
+        }
+    }
+
+    .coffeeIcon{
+        display: none;
+
+        @include media('<=tablet'){
+            display: block;
+            position: absolute;
+            top: 25px;
+            right: 45px;
+            z-index: 4;   
+        }
+    }
+
+    p{
+        display: none;
+        font-size: 13px;
+        font-family: 'Sugar';
+        color: #684028;
+
+        @include media('<=tablet'){
+            display: block;
+            position: absolute;
+            top: 8px;
+            right: 65px;
+            z-index: 4;   
+        }
+    }
+
+
+
+}
+
+.coffeeDesktopNav{
+
+    @include media('<=tablet'){
+        display: none;
+    }
+    
+}
+}
 
 
 

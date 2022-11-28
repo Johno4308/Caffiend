@@ -5,12 +5,35 @@ import Home from './components/Home'
 import Layout from './components/Layout/index'
 import Coffees from './components/Coffees'
 import CoffeeDesktopNavigation from './components/CoffeeDesktopNavigation/index'
-
 import Data from '../src/Data/coffeesData'
+
+import CoffeeMobileNavigation from './components/CoffeeMobileNavigation/index'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faClose, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   const [coffeeList, setCoffeeList] = useState(Data)
+  const [openList, setOpenList] = useState(false);
 
+  const coffeHambugerIcon = <FontAwesomeIcon 
+  icon={faBars} 
+  color="#684028" 
+  className="coffeehamburger"
+  onClick={() => setOpenList(!openList)} 
+/>
+
+const coffeesIcon = <FontAwesomeIcon 
+icon={faCoffee} 
+color="#684028" 
+className="coffeeIcon"
+/>
+
+const closeIcon1 = <FontAwesomeIcon 
+icon={faClose} 
+color="#684028" 
+className="coffeehamburger"
+onClick={() => setOpenList(!openList)} 
+/>
   console.log(coffeeList)
 
   function toggle(idx){
@@ -30,6 +53,7 @@ function App() {
     })
   }
 
+
   const Coffee = coffeeList.map( data => {
     return(
       <Route 
@@ -43,6 +67,21 @@ function App() {
         />
     )
   })
+
+  function closeMenu(){
+    setOpenList(!openList)
+  }
+
+  const CoffeeList = Data.map( data1 => { 
+    return(
+        <CoffeeMobileNavigation 
+            key={data1.id}
+            data={data1}
+            toggle={() => toggle(data1.id)}
+            close={() => closeMenu()}
+        />
+    )
+})
 
   const DesktopNav = Data.map(data1 => (
     <CoffeeDesktopNavigation 
@@ -63,6 +102,14 @@ function App() {
 
       </Route>
     </Routes>
+    <div>
+    <div className='coffee-ham-div'>
+            <p>other </p>
+            {coffeesIcon}
+            {openList ? closeIcon1 : coffeHambugerIcon} 
+        </div>
+        {openList && CoffeeList}
+    </div>
     {DesktopNav}
 
     </>

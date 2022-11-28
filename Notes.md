@@ -1,3 +1,6 @@
+Crtl K O
+
+
 Espresso
     The espresso, also known as a short black, is approximately 30 ml. of highly concentrated coffee. Although simple in appearance, it can be difficult to master.
     Ratio: 1 shot of espresso

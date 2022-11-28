@@ -1,5 +1,6 @@
 @import "../Breakpoints/breakpoints.scss";
 
+
 .coffees-text-zone{
     width: 95%;
     position: absolute;
@@ -37,6 +38,9 @@
         text-align: center;
         width: 60%;
 
+        @include media('<=tablet'){
+            padding-bottom: 5px;
+        }
 
         img{
             //position: relative;
@@ -48,13 +52,12 @@
                 position: relative;
                 width: 150px;
                 left: -60px;
-
             }
         }
 
         p{
             font-size: 30px;
-            line-height: 20px;
+            line-height: 30px;
             float: right;
             width: 50%;
             padding-top: 5%;
@@ -65,10 +68,21 @@
                 font-size: 16px;
                 line-height: 13px;
                 float: unset;
-                top: -120px;
+                top: -140px;
                 left: 110px;
+                padding-top: 0;
                 width: 100px;
             }
+        }
+    }
+
+    hr{
+        width: 70%;
+
+        @include media('<=tablet'){
+            position: relative;
+            bottom: 90px;
+            left: -30px;
         }
     }
 
@@ -77,8 +91,10 @@
 
         @include media('<=tablet'){
             position: relative;
-            top: -100px;
-            left: -20px;
+            padding-top: 0;
+            margin-top: 0;
+            bottom: 90px;
+            left: -30px;
         }
 
 
@@ -86,7 +102,8 @@
 
             @include media('<=tablet'){
                 text-align: left;
-                font-size: 15px;
+                font-size: 14px;
+                line-height: 20px;
             }
         }
     }

@@ -16,9 +16,11 @@ const Coffees = (props) => {
                 <p>{props.data.ratio}</p>
                 <p>{props.data.cup}</p>
             </section>
+            <hr />
             <ul>
             {props.data.steps.map(step => <li key={step.idx}>{step.text}</li>)}    
             </ul>
+            <hr />
         </div>
 
     )
