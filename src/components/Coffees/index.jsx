@@ -1,6 +1,6 @@
 import './index.scss'
 import React from 'react';
-import '../../assets/Images/'
+import '../../assets/Images/espresso.png'
 
 
 const Coffees = (props) => {
