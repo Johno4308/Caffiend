@@ -11,7 +11,8 @@ const Coffees = (props) => {
             <h1>{props.data.title}</h1>
             <p> {props.data.description}</p>
             <section>
-                <div style={{ backgroundImage: `url(../../src/assets/Images/${props.data.img})`}}></div> 
+                <div style={{ backgroundImage: `url(../..assets/Images/${props.data.img})`}}></div> 
+                {/* <div style={{ backgroundImage: `url(../../src/assets/Images/${props.data.img})`}}></div>  */}
                 {/* <img src={`../../src/assets/Images/${props.data.img}`} /> */}
                 <p>{props.data.ratio}</p>
                 <p>{props.data.cup}</p>
