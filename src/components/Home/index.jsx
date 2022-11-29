@@ -30,7 +30,7 @@ const Home = () => {
     
     return(
         <div className='text-zone'>
-            <h1>Caffined</h1>
+            <h1>Caffiend</h1>
             <p>Easy to follow instructions for great coffee</p>
             <div className='model-wrapper'>
                 <Canvas camera={{ fov:30, position: [0,15,5]}}>
