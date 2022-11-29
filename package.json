@@ -27,5 +27,6 @@
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
     "vite": "^3.2.3"
-  }
+  },
+  "homepage": "https://rad-halva-66eef4.netlify.app"
 }
