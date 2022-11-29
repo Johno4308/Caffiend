@@ -6,7 +6,7 @@ import { faCoffee, faPhone, faHandshake, faHome } from '@fortawesome/free-solid-
 import { useEffect } from 'react';
 import { gsap } from 'gsap-trial'
 
-const MobileNavigation = () => {
+const MobileNavigation = (props) => {
 
     useEffect(() => {
         gsap.to('.sec1', { delay: 0.0, duration: 0.5, x: -50, opacity: 1})
@@ -16,7 +16,7 @@ const MobileNavigation = () => {
     })
 
     return(
-        <div className='nav-bar-mobile'>
+        <div className='nav-bar-mobile' onClick={props.close}>
             <Link className='logo' to='/'>
                 <img src={Logo} alt='logo'/>
                 <p alt='logo-text'>Caffiend</p>

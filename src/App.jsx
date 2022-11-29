@@ -10,6 +10,7 @@ import CoffeeDesktopNavigation from './components/CoffeeDesktopNavigation/index'
 import CoffeeMobileNavigation from './components/CoffeeMobileNavigation/index'
 import Contact from './components/Contact/index'
 import Data from '../src/Data/coffeesData'
+import Acknowledgements from './components/Acknowledgements'
 
 
 
@@ -17,6 +18,7 @@ import Data from '../src/Data/coffeesData'
 function App() {
   const [coffeeList, setCoffeeList] = useState(Data)
   const [openList, setOpenList] = useState(false);
+
 
   const coffeHambugerIcon = <FontAwesomeIcon 
   icon={faBars} 
@@ -77,6 +79,7 @@ onClick={() => setOpenList(!openList)}
 
 
 
+
   const CoffeeList = Data.map( data1 => { 
     return(
         <CoffeeMobileNavigation 
@@ -109,6 +112,7 @@ function handleClick(){
       <Route path='/' element={<Layout onClick={() => handleClick()}/>}>
         <Route index element={<Home />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/acknowledge' element={<Acknowledgements />}/>
         {Coffee}
 
       </Route>

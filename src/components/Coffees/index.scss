@@ -22,11 +22,12 @@
     p{
         position: relative;
         font-family: 'Sugar';
-        width: 90%;
-        left: 160px;
+        width: 60%;
+        left: 20%;
 
         @include media('<=tablet'){
             left: 0px;
+            width: 90%;
         }
 
     }

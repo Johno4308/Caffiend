@@ -10,7 +10,7 @@ import { useState } from 'react'
 const Layout = () => {
 
     const [open, setOpen] = useState(false);
-    // const [openList, setOpenList] = useState(false);
+
 
     const hambugerIcon = <FontAwesomeIcon 
                             icon={faBars} 
@@ -32,7 +32,7 @@ const Layout = () => {
         <div className='hamburger-div'>
         {open ? closeIcon : hambugerIcon}
 
-        {open && <MobileNavigation />}
+        {open && <MobileNavigation close={() => setOpen()}/>}
         </div>
 
         <DesktopNavigation />
