@@ -3,7 +3,7 @@ export default[
         id: 1,
         title: 'Espresso',
         description: 'The espresso, also known as a short black, is approximately 30 ml. of highly concentrated coffee. Although simple in appearance, it can be difficult to master.',
-        img: '../../../public/espresso.png',
+        img: './espresso.png',
         ratio: 'Ratio: 1 shot of espresso',
         cup: 'Cup: 60-120 ml. Espresso Cup',
         steps: [
