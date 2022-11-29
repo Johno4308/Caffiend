@@ -23,7 +23,7 @@
         position: relative;
         font-family: 'Sugar';
         width: 90%;
-        left: 80px;
+        left: 160px;
 
         @include media('<=tablet'){
             left: 0px;
@@ -76,13 +76,16 @@
         }
     }
 
-    hr{
+    #steps-line{
         width: 70%;
+        background-color: #684028;
+        border: 0.5px solid #684028;
 
         @include media('<=tablet'){
             position: relative;
-            bottom: 90px;
+            bottom: 60px;
             left: -30px;
+            margin-top: 5px;
         }
     }
 
@@ -93,7 +96,7 @@
             position: relative;
             padding-top: 0;
             margin-top: 0;
-            bottom: 90px;
+            bottom: 60px;
             left: -30px;
         }
 

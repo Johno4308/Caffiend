@@ -121,8 +121,7 @@ function handleClick(){
         </div>
         {openList && CoffeeList}
     </div>
-    {DesktopNav}
-
+      {DesktopNav}
     </>
   )
 }

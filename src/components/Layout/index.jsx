@@ -1,13 +1,10 @@
 import './index.scss'
 import DesktopNavigation from '../DesktopNavigation/index' 
 import MobileNavigation from '../MobileNavigation/index'
-import CoffeeMobileNavigation from '../CoffeeMobileNavigation/index'
-import CoffeeDesktopNavigation from '../CoffeeDesktopNavigation'
 import { Outlet } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faClose, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
-import Data from '../../Data/coffeesData'
 
 
 const Layout = () => {

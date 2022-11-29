@@ -1,8 +1,7 @@
 @import "../Breakpoints/breakpoints.scss";
 
-
 .contact-textzone{
-  width: 90%;
+  width: 80%;
   will-change: contents;
   height: 90%;
   min-width: 556px;
@@ -47,28 +46,54 @@
 
     p{
         font-family: 'Sugar';
-        color: #443229;
+        color: #3084ac;
+        font-size: 20px;
 
         @include media('<=tablet'){
             width: 300px;
             position: relative;
             right: 10px;
+            font-size: 15px;
         }
     }
 
-    .model-wrapper{
+    .contact-model-wrapper{
         height: 40%;
         width: 100%;
         padding: 0;
-        position: relative;
+        padding: 10px 0;
+        right: 0;
 
 
-        @include media{
+        @include media('<=tablet'){
             height: 30%;
             position: relative;
             top: -10px;
-            right: 130px;
-            margin-bottom: 20px;
+            right: 140px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .contact-icons{
+
+        @include media('<=tablet'){
+            width: 50%;
+        }
+
+        h4{
+            font-family: 'Sugar';
+            font-size: 30px;
+            color: #3084ac;
+            margin-top: 0;
+
+            @include media('<=tablet'){
+                font-size: 20px;
+            }
+        }
+
+        a{
+            padding: 10px;
+            font-size: 30px;
         }
     }
 }

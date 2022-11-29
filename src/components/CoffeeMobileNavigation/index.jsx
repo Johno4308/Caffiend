@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import './index.scss'
 
 const CoffeeMobileNavigation = (props) => {
+
     return(
       <NavLink onClick={props.toggle && props.close} exact="true" activeclassname="active" to="/coffee">
         <section className='coffeeNav'>  

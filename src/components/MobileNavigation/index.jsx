@@ -9,10 +9,10 @@ import { gsap } from 'gsap-trial'
 const MobileNavigation = () => {
 
     useEffect(() => {
-        gsap.to('.sec1', { delay: 0.0, duration: 0.5, x: -100, opacity: 1})
-        gsap.to('.sec2', { delay: 0.2, duration: 0.5, x: -100, opacity: 1})
-        gsap.to('.sec3', { delay: 0.4, duration: 0.5, x: -100, opacity: 1})
-        gsap.to('.sec4', { delay: 0.6, duration: 0.5, x: -100, opacity: 1})
+        gsap.to('.sec1', { delay: 0.0, duration: 0.5, x: -50, opacity: 1})
+        gsap.to('.sec2', { delay: 0.2, duration: 0.5, x: -50, opacity: 1})
+        gsap.to('.sec3', { delay: 0.4, duration: 0.5, x: -50, opacity: 1})
+        gsap.to('.sec4', { delay: 0.6, duration: 0.5, x: -50, opacity: 1})
     })
 
     return(

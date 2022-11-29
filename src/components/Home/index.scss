@@ -1,7 +1,7 @@
 @import "../Breakpoints/breakpoints.scss";
 
 .text-zone{
-    width: 90%;
+    width: 80%;
     will-change: contents;
     height: 90%;
     min-width: 556px;
@@ -52,13 +52,15 @@
         height: 40%;
         width: 100%;
         padding: 0;
+        padding: 10px 0;
 
 
-        @include media{
+        @include media('<=tablet'){
             height: 30%;
             position: relative;
             top: -20px;
             margin-bottom: 20px;
+            
         }
     }
 
@@ -71,6 +73,12 @@
         color: #443229;
         border-radius: 25%;
         background-color: #ffffff;
+
+        &:hover{
+            color: #FFFFFF;
+            border: 2px solid #443229;
+            background-color: #684028;
+        }
     }
 
 }
