@@ -1,5 +1,6 @@
 import './index.scss'
 import React from 'react';
+import image from `../../assets/Images${props.data.img}`
 
 
 const Coffees = (props) => {
@@ -10,7 +11,7 @@ const Coffees = (props) => {
             <h1>{props.data.title}</h1>
             <p> {props.data.description}</p>
             <section>
-                <div style={{backgroundImage: `url(${props.data.img})`}}></div>
+                <div style={{backgroundImage: image}}></div>
                 <p>{props.data.ratio}</p>
                 <p>{props.data.cup}</p>
             </section>
