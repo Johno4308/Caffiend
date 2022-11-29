@@ -11,7 +11,7 @@ const Coffees = (props) => {
             <h1>{props.data.title}</h1>
             <p> {props.data.description}</p>
             <section>
-                <div style={{backgroundImage: image}}></div>
+                <img src={image} />
                 <p>{props.data.ratio}</p>
                 <p>{props.data.cup}</p>
             </section>
