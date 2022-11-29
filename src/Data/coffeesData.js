@@ -3,7 +3,7 @@ export default[
         id: 1,
         title: 'Espresso',
         description: 'The espresso, also known as a short black, is approximately 30 ml. of highly concentrated coffee. Although simple in appearance, it can be difficult to master.',
-        img: 'espresso.png',
+        img: '../../src/Images/espresso.png',
         ratio: 'Ratio: 1 shot of espresso',
         cup: 'Cup: 60-120 ml. Espresso Cup',
         steps: [
@@ -45,7 +45,7 @@ export default[
         id: 2,
         title: 'Double Espresso',
         description: 'A double espresso may also be listed as doppio, which is the Italian word for double. This drink is highly concentrated and strong.',
-        img: 'doubleespresso.png',
+        img: '../../src/Images/doubleespresso.png',
         ratio: 'Ratio: 2 shots of espresso',
         cup: 'Cup: 90-120 ml. Demitasse Cup',
         steps: [
@@ -87,7 +87,7 @@ export default[
         id: 3,
         title: 'Red Eye',
         description: 'The red eyes purpose is to add a boost of caffeine to your standard cup of coffee.',
-        img: 'redeye.png',
+        img: '../../src/Images/redeye.png',
         ratio: 'Ratio: 1 shot of espresso + 180 ml. of drip-brewed coffee',
         cup: 'Cup: 240 ml. Coffee Mug',
         steps: [
@@ -129,7 +129,7 @@ export default[
         id: 4,
         title: 'Black Eye',
         description: 'The black eye is just the doubled version of the red eye and is very high in caffeine.',
-        img: 'blackeye.png',
+        img: '../../src/Images/blackeye.png',
         ratio: 'Ratio: 2 shots of espresso + 180 ml. of drip-brewed coffee',
         cup: 'Cup: 240-300 ml. Coffee Mug',
         steps: [
@@ -171,7 +171,7 @@ export default[
         id: 5,
         title: 'Americano',
         description: 'Americanos are popular breakfast drinks and thought to have originated during World War II. The water dilutes the espresso while still maintaining a high level of caffeine.',
-        img: 'americano.png',
+        img: '../../src/Images/americano.png',
         ratio: 'Ratio: 1 shot of espresso + 90 ml. of hot water',
         cup: 'Cup: 150-180 ml. Glass Coffee Mug',
         steps: [
@@ -213,7 +213,7 @@ export default[
         id: 6,
         title: 'Long Black',
         description: 'The long black is a similar coffee drink to the americano, but it originated in New Zealand and Australia. It generally has more crema than an americano.',
-        img: 'longblack.png',
+        img: '../../src/Images/longblack.png',
         ratio: 'Ratio: 2 shots of espresso + 90 ml. of hot water',
         cup: 'Cup: 180-240 ml. Glass Coffee Mug',
         steps: [
@@ -255,7 +255,7 @@ export default[
         id: 7,
         title: 'Macchiato',
         description: 'The word macchiato means mark or stain. This is in reference to the mark that steamed milk leaves on the surface of the espresso as it is dashed into the drink.',
-        img: 'macchiato.png',
+        img: '../../src/Images/macchiato.png',
         ratio: 'Ratio: 1 shot of espresso + 1 to 2 teaspoons of steamed milk',
         cup: 'Cup: 90 ml. Glass Espresso Cup',
         steps: [
@@ -297,7 +297,7 @@ export default[
         id: 8,
         title: 'Long Macchiato',
         description: 'Often confused with a standard macchiato, the long macchiato is a taller version and will usually be identifiable by its distinct layers of coffee and steamed milk.',
-        img: 'longmacchiato.png',
+        img: '../../src/Images/longmacchiato.png',
         ratio: '2 shots of espresso + 2 to 4 teaspoons of steamed milk',
         cup: 'Cup: 150 ml. Rocks Glass',
         steps: [
@@ -339,7 +339,7 @@ export default[
         id: 9,
         title: 'Cortado',
         description: 'The cortado takes the macchiato one step further by evenly balancing the espresso with warm milk in order to reduce the acidity.',
-        img: 'cortado.png',
+        img: '../../src/Images/cortado.png',
         ratio: 'Ratio: 1 shot of espresso + 30 ml. of warm milk + 1 cm of foam',
         cup: 'Cup: 150 ml. Rocks Glass',
         steps: [
@@ -381,7 +381,7 @@ export default[
         id: 10,
         title: 'Breve',
         description: 'The breve provides a decadent twist on the average espresso, adding steamed half-and-half to create a rich and creamy texture.',
-        img: 'breve.png',
+        img: '../../src/Images/breve.png',
         ratio: 'Ratio: 1 shot of espresso + 90 ml. of steamed half-and-half + 1 cm of foam',
         cup: 'Cup: 150-210 ml. Low Cup',
         steps: [
@@ -423,7 +423,7 @@ export default[
         id: 11,
         title: 'Cappuccino',
         description: 'This creamy coffee drink is usually associated with indulgence and comfort because of its thick foam layer and additional flavorings that can be added to it',
-        img: 'cappuccino.png',
+        img: '../../src/Images/cappuccino.png',
         ratio: 'Ratio: 1-2 shots of espresso + 60 ml. of steamed milk + 60 ml. of foamed milk',
         cup: 'Cup: 180-240 ml. Cappuccino Mug',
         steps: [
@@ -465,7 +465,7 @@ export default[
         id: 12,
         title: 'Flat White',
         description: 'A flat white is very similar to a cappuccino but lacks the foam layer. To keep the drink creamy rather than frothy, steamed milk from the bottom of the jug',
-        img: 'flatwhite.png',
+        img: '../../src/Images/flatwhite.png',
         ratio: 'Ratio: 1 shot of espresso + 120 ml. of steamed milk',
         cup: 'Cup: 180 ml. Glass Tumbler',
         steps: [
@@ -499,7 +499,7 @@ export default[
         id: 13,
         title: 'Cafe Latte',
         description: 'Cafe lattes are considered an introductory coffee drink since the acidity and bitterness of coffee are cut by the amount of milk in the beverage.',
-        img: 'cafelatte.png',
+        img: '../../src/Images/cafelatte.png',
         ratio: 'Ratio: 1 shot of espresso + 240-300 ml. of steamed milk + 1 cm of foam',
         cup: 'Cup: 420 ml. Mixing Glass',
         steps: [
@@ -541,7 +541,7 @@ export default[
         id: 14,
         title: 'Mocha',
         description: 'The mocha is considered a coffee and hot chocolate hybrid. The chocolate powder or syrup gives it a rich and creamy flavor.',
-        img: 'mocha.png',
+        img: '../../src/Images/mocha.png',
         ratio: 'Ratio: 1 shot of espresso 10ml chocolate syrup 30ml. of steamed milk  2cm of whipped cream',
         cup: 'Cup: 180-240 ml. Irish Coffee Mug',
         steps: [
@@ -579,7 +579,7 @@ export default[
         id: 15,
         title: 'Vienna',
         description: 'There are a few variations on the Vienna, but one of the most common is made with two ingredients: espresso and whipped cream.',
-        img: 'vienna.png',
+        img: '../../src/Images/vienna.png',
         ratio: 'Ratio: 1-2 shots of espresso + 30 ml. of whipped cream',
         cup: 'Cup: 120-150 ml. Espresso Mug',
         steps: [
@@ -609,7 +609,7 @@ export default[
         id: 16,
         title: 'Affogato',
         description: 'Affogatos are more for a dessert coffee than a drink you would find at a cafe, but they can add a fun twist to your coffee menu.',
-        img: 'affogato.png',
+        img: '../../src/Images/affogato.png',
         ratio: 'Ratio: 1-2 shots of espresso + 1 scoop of vanilla ice cream',
         cup: 'Cup: 150-210 ml. Dessert Dish',
         steps: [
@@ -643,7 +643,7 @@ export default[
         id: 17,
         title: 'Cafe au Lait',
         description: 'The cafe au lait is typically made with French press coffee instead of an espresso shot to bring out the different flavors in the coffee',
-        img: 'cafeaulait.png',
+        img: '../../src/Images/cafeaulait.png',
         ratio: 'Ratio: 150 ml. French press coffee + 150 ml. scalded milk',
         cup: 'Cup: 360 ml. Coffee Mug',
         steps: [
@@ -677,7 +677,7 @@ export default[
         id: 18,
         title: 'Iced Coffee',
         description: 'Iced coffees become very popular in the summertime in the United States. Often, different flavoring syrups will be added per the preference of the customer.',
-        img: 'icedcoffee.png',
+        img: '../../src/Images/icedcoffee.png',
         ratio: 'Ratio: 60 ml. espresso + 120 ml. of ice + 120-180 ml of milk or water',
         cup: 'Cup: 420 ml. Mixing Glass',
         steps: [
