@@ -1,15 +1,8 @@
 import './index.scss'
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap-trial'
-
+import React from 'react';
 
 
 const Coffees = (props) => {
-
-    // useEffect(() => {
-    //     gsap.to('img', { duration: 0.5, x: 60, opacity: 1})
-    //     gsap.to('ul', { duration: 0.5, y: -60, opacity: 1})
-    // })
 
     return(
         <div className='coffees-text-zone'>
@@ -17,7 +10,7 @@ const Coffees = (props) => {
             <h1>{props.data.title}</h1>
             <p> {props.data.description}</p>
             <section>
-                <img src={`../src/assets/Images/${props.data.img}`} />
+                <img src={`../../src/Images/${props.data.img}`} />
                 <p>{props.data.ratio}</p>
                 <p>{props.data.cup}</p>
             </section>

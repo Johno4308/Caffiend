@@ -44,10 +44,9 @@
         }
 
         img{
-            //position: relative;
-            // left: -150px;
             width: 300px;
             float: left;
+            
 
             @include media('<=tablet'){
                 position: relative;
