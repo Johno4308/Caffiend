@@ -34,7 +34,7 @@ const Contact = () => {
     return(
         <div className='contact-textzone'>
             <h1>Contact Me</h1>
-            <h2>I would love you hear from you</h2>
+            <h2>I would love to hear from you</h2>
             <p>Whether its a compliment, a critque or you burnt your hand touching that espresso while using this site</p>
             <p>Or maybe you are looking for a Junior Web Developer, whatever the case, i'm all ears.</p>
             
