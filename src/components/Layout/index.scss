@@ -1,106 +1,88 @@
 @import "../Breakpoints/breakpoints.scss";
 
-div{
+div {
+  .coffee-ham-div {
+    background: transparent;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    display: flex;
 
-    .coffee-ham-div{
-        
-        background: transparent;
-        width: 150px;
-        height: 30px;
+    .coffeehamburger {
+      display: none;
+
+      @include media("<=tablet") {
+        display: block;
         position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 3;
-        display: flex;
-
-        .coffeehamburger{
-            display: none;
-
-            @include media('<=tablet'){
-                display: block;
-                position: absolute;
-                top: 25px;
-                right: 25px;
-                z-index: 4;   
-            }
-        }
-
-        .coffeeIcon{
-            display: none;
-
-            @include media('<=tablet'){
-                display: block;
-                position: absolute;
-                top: 25px;
-                right: 45px;
-                z-index: 4;   
-            }
-        }
-
-        p{
-            display: none;
-            font-size: 13px;
-            font-family: 'Sugar';
-            color: #684028;
-
-            @include media('<=tablet'){
-                display: block;
-                position: absolute;
-                top: 8px;
-                right: 65px;
-                z-index: 4;   
-            }
-        }
-
-
-
+        top: 25px;
+        right: 25px;
+        z-index: 4;
+      }
     }
 
-    .coffeeDesktopNav{
+    .coffeeIcon {
+      display: none;
 
-        @include media('<=tablet'){
-            display: none;
-        }
-        
+      @include media("<=tablet") {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 45px;
+        z-index: 4;
+      }
     }
 
-    .hamburger-div{
+    p {
+      display: none;
+      font-size: 13px;
+      font-family: "Sugar";
+      color: #684028;
 
-        .hamburger{
-            display: none;
-            
-            @include media('<=tablet'){
-                display: block;
-                position: absolute;
-                top: 25px;
-                left: 25px;
-                z-index: 4;   
-            }
-        }
+      @include media("<=tablet") {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 65px;
+        z-index: 4;
+      }
+    }
+  }
 
-        .nav-bar-mobile{
-            display: none;
-    
-            @include media('<=tablet'){
-                display: block;
-                top: 60px;
-            }
-        }
+  .coffeeDesktopNav {
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
 
+  .hamburger-div {
+    .hamburger {
+      display: none;
+
+      @include media("<=tablet") {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 4;
+      }
     }
 
-    .nav-bar-desktop{
+    .nav-bar-mobile {
+      display: none;
 
-        @include media('<=tablet'){
-            display: none;
-        }
-        
+      @include media("<=tablet") {
+        display: block;
+        top: 60px;
+      }
     }
+  }
 
-
-
+  .nav-bar-desktop {
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
 }
-
-
-
-

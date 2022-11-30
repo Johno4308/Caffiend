@@ -1,28 +1,25 @@
+a {
+  width: 330px;
+  text-decoration: none;
 
-a{
+  .coffeeNav {
     width: 330px;
-    text-decoration: none;
+    right: 25px;
+    font-size: 15px;
+    flex: 0 0 auto;
+    flex-direction: row;
+    position: relative;
+    border-bottom: 2px solid #443229;
+    border-left: 2px solid #443229;
+    border-right: 2px solid #443229;
+    color: #443229;
+    background-color: #ffffff;
+    font-family: "Sugar";
+    z-index: 5;
+    height: 31px;
 
-    .coffeeNav{
-        width: 330px;
-        right: 25px;
-        font-size: 15px;
-        flex: 0 0 auto;         
-        flex-direction: row; 
-        position: relative;
-        border-bottom: 2px solid #443229;
-        border-left: 2px solid #443229;
-        border-right: 2px solid #443229;
-        color: #443229;
-        background-color: #ffffff;
-        font-family: 'Sugar';
-        z-index: 5;
-        height: 31px;
-
-        li{
-            list-style: none;
-        }
+    li {
+      list-style: none;
     }
-    
+  }
 }
-

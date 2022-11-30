@@ -1,90 +1,84 @@
 @import "../Breakpoints/breakpoints.scss";
 
-.text-zone{
-    width: 80%;
-    will-change: contents;
-    height: 90%;
-    min-width: 556px;
-    position: absolute;
-    opacity: 0;
-    top: 5%;
-    margin: 0 auto;
-    z-index: 1;
-    transform-style: preserve-3d;
-    animation: fadeIn 1s forwards;
-    animation-delay: 0.2s;
+.text-zone {
+  width: 80%;
+  will-change: contents;
+  height: 90%;
+  min-width: 556px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.2s;
 
-    @include media('<=tablet'){
-        min-width: 200px;
-        width: 20%;
-        right: 85px;
-        top: 80px;
+  @include media("<=tablet") {
+    min-width: 200px;
+    width: 20%;
+    right: 85px;
+    top: 80px;
+  }
+
+  h1 {
+    font-family: "Yellow";
+    font-size: 60px;
+    color: #443229;
+
+    @include media("<=tablet") {
+      position: relative;
+      right: 10px;
+      top: 20px;
     }
+  }
 
+  p {
+    font-family: "Sugar";
+    font-size: 20px;
+    color: #684028;
 
-    h1{
-        font-family: 'Yellow';
-        font-size: 60px;
-        color: #443229;
-
-        @include media('<=tablet'){
-            position: relative;
-            right: 10px;
-            top: 20px;
-        }
-
+    @include media("<=tablet") {
+      position: relative;
+      top: 20px;
+      padding-bottom: 40px;
     }
-      
-    p{
-        font-family: 'Sugar';
-        font-size: 20px;
-        color: #684028;
+  }
 
-        @include media('<=tablet'){
-            position: relative;
-            top: 20px;
-            padding-bottom: 40px;
-        }
+  .model-wrapper {
+    height: 40%;
+    width: 100%;
+    padding: 0;
+    padding: 10px 0;
 
+    @include media("<=tablet") {
+      height: 30%;
+      position: relative;
+      top: -20px;
+      margin-bottom: 20px;
     }
+  }
 
-    .model-wrapper{
-        height: 40%;
-        width: 100%;
-        padding: 0;
-        padding: 10px 0;
+  .flat-button {
+    font-size: 20px;
+    border: 2px solid #443229;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #443229;
+    border-radius: 25%;
+    background-color: #ffffff;
 
-
-        @include media('<=tablet'){
-            height: 30%;
-            position: relative;
-            top: -20px;
-            margin-bottom: 20px;
-            
-        }
+    &:hover {
+      color: #ffffff;
+      border: 2px solid #443229;
+      background-color: #684028;
     }
-
-    .flat-button{
-        font-size: 20px;
-        border: 2px solid #443229;
-        padding: 10px 30px;
-        text-decoration: none;
-        font-weight: 600;
-        color: #443229;
-        border-radius: 25%;
-        background-color: #ffffff;
-
-        &:hover{
-            color: #FFFFFF;
-            border: 2px solid #443229;
-            background-color: #684028;
-        }
-    }
-
+  }
 }
-    
+
 // .flat-button{
-        
+
 //     font-size: 12px;
 //     font-weight: 600;
 //     letter-spacing: 4px;
@@ -104,4 +98,4 @@
 //         border: 2px solid #54047C;
 //         opacity: 0.6;
 //     }
-// }  
+// }

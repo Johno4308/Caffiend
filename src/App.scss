@@ -1,6 +1,6 @@
 $primary-color: #443229;
 @import "./components/Breakpoints/breakpoints.scss";
-@import 'animate.css';
+@import "animate.css";
 
 #root {
   max-width: 1280px;
@@ -9,20 +9,19 @@ $primary-color: #443229;
   text-align: center;
 }
 
-@font-face{
-  font-family: 'Yellow';
-  src: url('../src/assets/Fonts/Yellow-Ginger.ttf') format('truetype');
+@font-face {
+  font-family: "Yellow";
+  src: url("../src/assets/Fonts/Yellow-Ginger.ttf") format("truetype");
 }
 
-@font-face{
-  font-family: 'Sugar';
-  src: url('../src/assets/Fonts/Coffee-with-Sugar.ttf') format('truetype');
+@font-face {
+  font-family: "Sugar";
+  src: url("../src/assets/Fonts/Coffee-with-Sugar.ttf") format("truetype");
 }
 
-
-div{
-  #coffee-ham-div{
-    visibility: visible;   
+div {
+  #coffee-ham-div {
+    visibility: visible;
     background: transparent;
     width: 150px;
     height: 30px;
@@ -32,60 +31,49 @@ div{
     z-index: 3;
     display: flex;
 
-    .coffeehamburger{
-        display: none;
+    .coffeehamburger {
+      display: none;
 
-        @include media('<=tablet'){
-            display: block;
-            position: absolute;
-            top: 25px;
-            right: 25px;
-            z-index: 4;   
-        }
+      @include media("<=tablet") {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        z-index: 4;
+      }
     }
 
-    .coffeeIcon{
-        display: none;
+    .coffeeIcon {
+      display: none;
 
-        @include media('<=tablet'){
-            display: block;
-            position: absolute;
-            top: 25px;
-            right: 45px;
-            z-index: 4;   
-        }
+      @include media("<=tablet") {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 45px;
+        z-index: 4;
+      }
     }
 
-    p{
-        display: none;
-        font-size: 13px;
-        font-family: 'Sugar';
-        color: #684028;
+    p {
+      display: none;
+      font-size: 13px;
+      font-family: "Sugar";
+      color: #684028;
 
-        @include media('<=tablet'){
-            display: block;
-            position: absolute;
-            top: 8px;
-            right: 65px;
-            z-index: 4;   
-        }
+      @include media("<=tablet") {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 65px;
+        z-index: 4;
+      }
     }
+  }
 
-
-
+  .coffeeDesktopNav {
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
 }
-
-.coffeeDesktopNav{
-
-    @include media('<=tablet'){
-        display: none;
-    }
-    
-}
-}
-
-
-
-
-
-
